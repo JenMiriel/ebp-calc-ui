@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba41843-967f-416f-a966-f417097d67fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,13 +31,37 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/services/employee-service.service.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#43#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app-routing.module.ts">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
@@ -53,7 +74,7 @@
             <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/home/home.component.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
-                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
                 </state>
               </provider>
             </entry>
@@ -62,11 +83,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.component.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-480">
-                  <caret line="43" selection-start-line="43" selection-end-line="43" />
+                <state relative-caret-position="360">
+                  <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -83,9 +104,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -111,10 +136,12 @@
         <option value="$PROJECT_DIR$/ebp-calc-app/src/app/models/settings.ts" />
         <option value="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.sass" />
         <option value="$PROJECT_DIR$/ebp-calc-app/angular.json" />
-        <option value="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/ebp-calc-app/src/app/pages/home/home.component.html" />
         <option value="$PROJECT_DIR$/ebp-calc-app/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/ebp-calc-app/src/app/app.component.scss" />
+        <option value="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee-service.service.ts" />
+        <option value="$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts" />
       </list>
     </option>
   </component>
@@ -210,6 +237,14 @@
               <item name="ebp-calc-ui" type="462c0819:PsiDirectoryNode" />
               <item name="ebp-calc-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ebp-calc-ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ebp-calc-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="ebp-calc-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,18 +294,18 @@
       <option name="presentableId" value="Default" />
       <updated>1610117995095</updated>
       <workItem from="1610117997529" duration="430000" />
-      <workItem from="1610118505838" duration="7263000" />
+      <workItem from="1610118505838" duration="8823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7693000" />
+    <option name="totallyTimeSpent" value="9253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15437302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15437302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -283,7 +318,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26868907" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.26868907" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -294,15 +329,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -368,34 +394,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="360">
+          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/home/home.component.html">
+    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="255">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/services/employee-service.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
