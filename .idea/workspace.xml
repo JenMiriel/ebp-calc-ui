@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ba41843-967f-416f-a966-f417097d67fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee-service.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/services/settings-service.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/services/settings.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/services/settings-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/services/settings.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +110,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -286,17 +282,25 @@
       <updated>1610117995095</updated>
       <workItem from="1610117997529" duration="430000" />
       <workItem from="1610118505838" duration="12754000" />
-      <workItem from="1610138600572" duration="2109000" />
+      <workItem from="1610138600572" duration="3383000" />
     </task>
+    <task id="LOCAL-00001" summary="smoothed out api call for employees">
+      <created>1610141558238</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610141558238</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15293000" />
+    <option name="totallyTimeSpent" value="16567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2118019" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13382508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -318,6 +322,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="smoothed out api call for employees" />
+    <option name="LAST_COMMIT_MESSAGE" value="smoothed out api call for employees" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2599" y="291" key="FileChooserDialogImpl" timestamp="1610140263831">
