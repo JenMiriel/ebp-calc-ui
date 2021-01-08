@@ -19,11 +19,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": false,
     "strictInputAccessModifiers": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
     "strictTemplates": false
   }
 }
