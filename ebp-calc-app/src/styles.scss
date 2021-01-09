@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+$primary-color: #457a52;
+.primary-color {
+  background-color: #457a52!important;
+}
+
+$primary-color-dark: #2f5437;
+.primary-color-dark {
+  background-color: #2f5437!important;
+}
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
