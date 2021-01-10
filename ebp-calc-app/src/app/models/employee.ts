@@ -1,4 +1,5 @@
 import * as moment from 'moment';
+import { Dependent } from "./dependent";
 
 export class Employee {
   id: number;
@@ -7,6 +8,7 @@ export class Employee {
   birthDate: moment.Moment;
   payRate: number;
   insured: boolean;
+  dependents?: Dependent;
 
 
 

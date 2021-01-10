@@ -1,7 +1,7 @@
-import { Dependant } from './dependant';
+import { Dependent } from './dependent';
 
-describe('Dependant', () => {
+describe('Dependent', () => {
   it('should create an instance', () => {
-    expect(new Dependant()).toBeTruthy();
+    expect(new Dependent()).toBeTruthy();
   });
 });

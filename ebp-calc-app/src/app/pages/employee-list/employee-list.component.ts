@@ -43,6 +43,7 @@ export class EmployeeListComponent implements OnInit {
     this.employeeService.getAllEmployees()
       .pipe(
         tap(data => {
+          console.log('data:', data);
           this.employeeList = data;
         }),
         catchError(() => EMPTY),

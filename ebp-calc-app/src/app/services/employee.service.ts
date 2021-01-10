@@ -13,9 +13,9 @@ export class EmployeeService {
   constructor(private http: HttpClient) {
   }
 
-  getAllEmployees(): Observable<Employee[]> {
+  getAllEmployees(): Observable<any[]> {
     const url = `${environment.backendUrl}/employee`;
-    return this.http.get<Employee[]>(url).pipe();
+    return this.http.get<any[]>(url).pipe();
 
     // test data
     // const mockEmplArr: Employee[] = [
