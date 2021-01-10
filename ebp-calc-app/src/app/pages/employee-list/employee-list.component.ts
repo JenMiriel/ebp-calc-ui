@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { EmployeeService } from "../../services/employee.service";
-import { catchError, tap } from "rxjs/operators";
-import { EMPTY } from "rxjs";
-import { Employee } from "../../models/employee";
+import {Component, OnInit} from '@angular/core';
+import {EmployeeService} from "../../services/employee.service";
+import {catchError, take, tap} from "rxjs/operators";
+import {EMPTY} from "rxjs";
+import {Employee} from "../../models/employee";
+import {Settings} from "../../models/settings";
+import {SettingsService} from "../../services/settings.service";
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {AddPersonComponent} from "../../components/add-person/add-person.component";
 
 @Component({
   selector: 'app-employee-list',
@@ -11,23 +15,62 @@ import { Employee } from "../../models/employee";
 })
 export class EmployeeListComponent implements OnInit {
 
+  appSettings = new Settings();
   employeeList: Employee[] | undefined;
+  // masterEmployeeDisplay: new MatTableDataSource();
+  displayedColumns: string[] = ['icon', 'name', 'insured', 'payRate', 'benefitCost', 'edit'];
 
-  constructor(private employeeService: EmployeeService) { }
+
+  constructor(private settingsService: SettingsService,
+              private employeeService: EmployeeService,
+              private modalService: NgbModal) {
+  }
 
   ngOnInit(): void {
     this.loadData();
   }
 
   loadData() {
+    this.settingsService.getSettings()
+      .pipe(
+        take(1),
+        tap(data => {
+          this.appSettings = data[0];
+        }),
+        catchError(() => EMPTY),
+      ).subscribe();
+
     this.employeeService.getAllEmployees()
       .pipe(
         tap(data => {
           this.employeeList = data;
-          console.log(this.employeeList);
         }),
         catchError(() => EMPTY),
       ).subscribe();
+  }
+
+  calculateEmployeeBenefitCost(employee: Employee) {
+    var actualCost = 0;
+    if(employee.insured) {
+      actualCost = this.appSettings.employeeCost - this.determineDiscount(employee);
+    }
+    return actualCost;
+  }
+
+  determineDiscount(employee: Employee){
+    var discount = 0;
+
+    if((employee.firstName.charAt(0) === this.appSettings.discountString) ||
+      (employee.lastName.charAt(0) === this.appSettings.discountString)){
+        discount = this.appSettings.discountPercentage * .01;
+    }
+    return this.appSettings.employeeCost * discount;
+  }
+
+
+  open() {
+    const modalRef = this.modalService.open(AddPersonComponent);
+    modalRef.componentInstance.name = 'World';
   }
 
 }

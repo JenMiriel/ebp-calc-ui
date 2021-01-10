@@ -10,6 +10,9 @@ import { DisplayBeneficiariesComponent } from './components/display-beneficiarie
 import { HomeComponent } from './pages/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from "@angular/common/http";
+import { MatTableModule } from "@angular/material/table";
+import { MatButtonModule } from "@angular/material/button";
+import { MatIconModule } from "@angular/material/icon";
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { HttpClientModule } from "@angular/common/http";
     NoopAnimationsModule,
     NgbModule,
     HttpClientModule,
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

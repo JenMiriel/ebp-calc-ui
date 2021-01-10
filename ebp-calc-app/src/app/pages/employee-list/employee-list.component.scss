@@ -1,0 +1,71 @@
+.bold {
+  font-weight: bold;
+  color: #457a52;
+}
+
+.addEmployeeBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+
+  .btn-outline-primary {
+    color: #457a52;
+    border: 1px solid #457a52;
+    align-content: center;
+  }
+  .btn-outline-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #ffffff !important;
+    background-color: #457a52 !important;
+  }
+  .btn-outline-primary.active {
+    color: #aaaaaa !important;
+    background-color: #2f5437 !important;
+  }
+
+  .material-icons {
+    padding: 0 0 4px 8px;
+  }
+
+}
+
+$primary-color: #457a52;
+.primary-color {
+  background-color: #457a52!important;
+}
+
+$primary-color-dark: #2f5437;
+.primary-color-dark {
+  background-color: #2f5437!important;
+}
+
+
+.mat-table {
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  .mat-header-cell  {
+    color: #457a52;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: #457a52 1px solid;
+    padding-bottom: 4px;
+  }
+  .material-icons {
+    color: #457a52;
+  }
+  .mat-cell {
+    color: black;
+
+  }
+
+  .mat-column-payRate, .mat-column-benefitCost {
+    text-align: right;
+    padding: 0 16px 0 0px;
+  }
+
+  .mat-column-addDependant, .mat-column-edit {
+    text-align: center;
+  }
+
+}
