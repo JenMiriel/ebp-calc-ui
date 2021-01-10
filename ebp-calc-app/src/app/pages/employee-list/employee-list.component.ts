@@ -5,6 +5,8 @@ import {EMPTY} from "rxjs";
 import {Employee} from "../../models/employee";
 import {Settings} from "../../models/settings";
 import {SettingsService} from "../../services/settings.service";
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {AddPersonComponent} from "../../components/add-person/add-person.component";
 
 @Component({
   selector: 'app-employee-list',
@@ -20,7 +22,8 @@ export class EmployeeListComponent implements OnInit {
 
 
   constructor(private settingsService: SettingsService,
-              private employeeService: EmployeeService) {
+              private employeeService: EmployeeService,
+              private modalService: NgbModal) {
   }
 
   ngOnInit(): void {
@@ -62,6 +65,12 @@ export class EmployeeListComponent implements OnInit {
         discount = this.appSettings.discountPercentage * .01;
     }
     return this.appSettings.employeeCost * discount;
+  }
+
+
+  open() {
+    const modalRef = this.modalService.open(AddPersonComponent);
+    modalRef.componentInstance.name = 'World';
   }
 
 }
