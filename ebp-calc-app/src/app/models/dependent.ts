@@ -8,7 +8,7 @@ export class Dependent {
   birthDate: moment.Moment | string;
   isSpouse: boolean;
   employeeId: number;
-  benefitCostIndividual: number;
+  benefitCostDependent: number;
 
   constructor(init?: Partial<Employee>) {
     Object.assign(this, init);

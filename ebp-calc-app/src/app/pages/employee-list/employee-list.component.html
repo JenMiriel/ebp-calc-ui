@@ -12,6 +12,7 @@
 
 
 <div class="employeeDataBox">
+
   <div class="headerForEmployeeCard">
     <div class="employeeIcon"></div>
     <div class="employeeName">Name</div>
@@ -20,23 +21,38 @@
     <div class="employeeBenefits">Benefits Cost</div>
     <div class="employeeEdit">Edit</div>
   </div>
+
   <div class="employeeInfoDataRow" *ngFor="let empl of employeeList">
+
     <div class="employeeCard" >
       <div class="employeeIcon"><span class="material-icons"> person </span></div>
       <div class="employeeName">{{empl.firstName}} {{empl.lastName}}</div>
       <div class="employeeInsurance">{{empl.insured}}</div>
       <div class="employeePay">{{(empl.payRate * 26) | currency}} </div>
-      <div class="employeeBenefits">{{calculateEmployeeBenefitCost(empl) | currency}} </div>
+      <div class="employeeBenefits">{{empl.benefitCostEmployee | currency}} </div>
       <div class="employeeEdit"><span class="material-icons"> edit </span></div>
     </div>
+
     <div class="dependentsCard" *ngFor="let dep of empl.dependents">
       <div class="employeeIcon"></div>
       <div class="employeeName">{{dep.firstName}} {{dep.lastName}}</div>
       <div class="employeeInsurance"><span *ngIf="dep.isSpouse">Spouse</span></div>
       <div class="employeePay"> </div>
-      <div class="employeeBenefits">{{calculateEmployeeBenefitCost(dep) | currency}} </div>
+      <div class="employeeBenefits">{{dep.benefitCostDependent | currency}} </div>
       <div class="employeeEdit"></div>
     </div>
+
+    <div class="benefitsTotalLine">
+      <div class="totalTitle">Family Benefits Cost:</div>
+      <div class="benefitsTotal">{{empl.totalBenefitCost | currency}} </div>
+    </div>
+
+  </div>
+
+
+  <div class="grandBenefitsTotalLine">
+    <div class="totalTitle">Grand Total Benefits Cost:</div>
+    <div class="benefitsTotal">{{ grandTotalBenefitsCost | currency}} </div>
   </div>
 
 </div>

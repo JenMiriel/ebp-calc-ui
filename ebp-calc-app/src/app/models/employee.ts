@@ -8,8 +8,8 @@ export class Employee {
   birthDate: moment.Moment;
   payRate: number;
   insured: boolean;
-  dependents?: Dependent;
-  benefitCostIndividual: number;
+  dependents?: Dependent[];
+  benefitCostEmployee: number;
   totalBenefitCost: number;
 
 

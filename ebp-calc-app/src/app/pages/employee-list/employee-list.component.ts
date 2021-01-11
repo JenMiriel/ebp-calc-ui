@@ -28,6 +28,8 @@ import {log} from "util";
 export class EmployeeListComponent implements OnInit {
 
   appSettings = new Settings();
+  grandTotalBenefitsCost = 0;
+
   employeeList: Employee[] | undefined;
   displayedColumns: string[] = ['icon', 'name', 'insured', 'payRate', 'benefitCost', 'edit'];
   expandedElementz: Employee | null;
@@ -61,7 +63,6 @@ export class EmployeeListComponent implements OnInit {
       .pipe(
         tap(data => {
           this.employeeList = data;
-          console.log(this.employeeList);
           this.calculateEmployeeBenefitCost(this.employeeList);
         }),
         catchError(() => EMPTY),
@@ -69,10 +70,21 @@ export class EmployeeListComponent implements OnInit {
   }
 
   calculateEmployeeBenefitCost(employeeList: Employee[]) {
-    employeeList.forEach((employee) => {
-      var actualCost = 0;
-      if(employee.insured) {
-        actualCost = this.appSettings.employeeCost - this.determineDiscount(employee.firstName, employee.lastName);
+    employeeList.forEach((employee) =>
+    {
+      if(employee.insured)
+      {
+        employee.totalBenefitCost = 0;
+        employee.benefitCostEmployee = this.appSettings.employeeCost -
+          (this.determineDiscount(employee.firstName, employee.lastName) * this.appSettings.employeeCost);
+        employee.totalBenefitCost += employee.benefitCostEmployee;
+        employee.dependents.forEach((dependent) =>
+        {
+          dependent.benefitCostDependent = this.appSettings.dependantCost -
+            (this.determineDiscount(dependent.firstName, dependent.lastName) * this.appSettings.dependantCost);
+          employee.totalBenefitCost += dependent.benefitCostDependent;
+        });
+        this.grandTotalBenefitsCost += employee.totalBenefitCost;
       }
     });
 
@@ -84,7 +96,7 @@ export class EmployeeListComponent implements OnInit {
       (lName.charAt(0) === this.appSettings.discountString)){
         discount = this.appSettings.discountPercentage * .01;
     }
-    return this.appSettings.employeeCost * discount;
+    return discount;
   }
 
 

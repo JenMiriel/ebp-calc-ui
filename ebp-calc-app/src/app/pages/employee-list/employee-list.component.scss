@@ -148,7 +148,44 @@ $primary-color-dark: #2f5437;
   .dependentsCard:hover {
     background-color: #eeeeee;
   }
+
+  .benefitsTotalLine {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    padding-right: 72px;
+    font-weight: bold;
+    .totalTitle {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      padding-right: 8px;
+    }
+    .benefitsTotal {
+      width: 100px;
+      border-top: 1px solid #457a52;
+    }
+  }
 }
 .employeeInfoDataRow:hover {
   background-color: #d7e2da;
+}
+
+.grandBenefitsTotalLine {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  padding: 16px 72px 16px 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #457a52;
+  .totalTitle {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 8px;
+  }
+  .benefitsTotal {
+    width: 100px;
+  }
 }
