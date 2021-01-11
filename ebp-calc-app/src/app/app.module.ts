@@ -13,7 +13,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { MatTableModule } from "@angular/material/table";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatListModule } from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -32,6 +33,8 @@ import { MatIconModule } from "@angular/material/icon";
     MatTableModule,
     MatButtonModule,
     MatIconModule,
+    BrowserAnimationsModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

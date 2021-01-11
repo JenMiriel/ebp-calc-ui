@@ -39,33 +39,153 @@ $primary-color-dark: #2f5437;
   background-color: #2f5437!important;
 }
 
-
-.mat-table {
-  background-color: transparent;
-  color: black;
-  width: 100%;
-  .mat-header-cell  {
+.headerForEmployeeCard {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #457a52;
+  div {
     color: #457a52;
     font-weight: bold;
-    font-size: 14px;
-    border-bottom: #457a52 1px solid;
-    padding-bottom: 4px;
   }
-  .material-icons {
-    color: #457a52;
+  .employeeIcon {
+    width: 40px;
   }
-  .mat-cell {
-    color: black;
+  .employeeName {
+    width: 310px;
+  }
+  .employeeInsurance {
+    width: 80px;
+  }
+  .employeePay {
+    width: 100px;
+  }
+  .employeeBenefits {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  .employeeEdit {
+    width: 72px;
+    padding-left: 32px;
+  }
+}
 
+.employeeInfoDataRow {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #457a52;
+
+  .employeeCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .material-icons {
+      color: #457a52;
+    }
+
+    div {
+      color: black;
+      padding: 8px 4px 8px 4px;
+    }
+    .employeeIcon {
+      width: 40px;
+    }
+    .employeeName {
+      width: 310px;
+    }
+    .employeeInsurance {
+      width: 80px;
+    }
+    .employeePay {
+      width: 100px;
+    }
+    .employeeBenefits {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+    .employeeEdit {
+      width: 72px;
+      padding-left: 32px;
+    }
+  }
+  .employeeCard:hover {
+    background-color: #d7e2da;
   }
 
-  .mat-column-payRate, .mat-column-benefitCost {
-    text-align: right;
-    padding: 0 16px 0 0px;
+  .dependentsCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+      color: black;
+      padding: 4px 4px 4px 4px;
+      border: 0px solid #888888;
+    }
+    .employeeIcon {
+      width: 40px;
+    }
+    .employeeName {
+      width: 310px;
+    }
+    .employeeInsurance {
+      width: 80px;
+    }
+    .employeePay {
+      width: 100px;
+    }
+    .employeeBenefits {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+    .employeeEdit {
+      width: 72px;
+      padding-left: 32px;
+    }
+  }
+  .dependentsCard:hover {
+    background-color: #eeeeee;
   }
 
-  .mat-column-addDependant, .mat-column-edit {
-    text-align: center;
+  .benefitsTotalLine {
+    display: flex;
+    flex-direction: row;
+    text-align: end;
+    padding-right: 72px;
+    font-weight: bold;
+    .totalTitle {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      padding-right: 8px;
+    }
+    .benefitsTotal {
+      width: 100px;
+      border-top: 1px solid #457a52;
+    }
   }
+}
+.employeeInfoDataRow:hover {
+  background-color: #d7e2da;
+}
 
+.grandBenefitsTotalLine {
+  display: flex;
+  flex-direction: row;
+  text-align: end;
+  padding: 16px 72px 16px 16px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #457a52;
+  .totalTitle {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 8px;
+  }
+  .benefitsTotal {
+    width: 100px;
+  }
 }
