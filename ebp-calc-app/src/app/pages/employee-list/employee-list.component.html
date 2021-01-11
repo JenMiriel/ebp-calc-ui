@@ -9,33 +9,35 @@
                                         (click)="open()"> Add New Employee
   <span class="material-icons"> person_add </span></button> </p>
 
-<div>
-  <table mat-table [dataSource]="employeeList">
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let myRowData; columns: displayedColumns"></tr>
-    <ng-container matColumnDef="icon">
-      <th mat-header-cell *matHeaderCellDef>  </th>
-      <td mat-cell *matCellDef="let empl"> <span class="material-icons"> person </span> </td>
-    </ng-container>
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let empl"> {{empl.firstName}} {{empl.lastName}} </td>
-    </ng-container>
-    <ng-container matColumnDef="insured">
-      <th mat-header-cell *matHeaderCellDef> Insured </th>
-      <td mat-cell *matCellDef="let empl"> {{empl.insured}} </td>
-    </ng-container>
-    <ng-container matColumnDef="payRate">
-      <th mat-header-cell *matHeaderCellDef> Pay Rate </th>
-      <td mat-cell *matCellDef="let empl"> {{(empl.payRate * 26) | currency}} </td>
-    </ng-container>
-    <ng-container matColumnDef="benefitCost">
-      <th mat-header-cell *matHeaderCellDef> Benefit Cost </th>
-      <td mat-cell *matCellDef="let empl"> {{calculateEmployeeBenefitCost(empl) | currency}}  </td>
-    </ng-container>
-    <ng-container matColumnDef="edit">
-      <th mat-header-cell *matHeaderCellDef> Edit </th>
-      <td mat-cell *matCellDef="let empl"> <span class="material-icons"> edit </span> </td>
-    </ng-container>
-  </table>
+
+
+<div class="employeeDataBox">
+  <div class="headerForEmployeeCard">
+    <div class="employeeIcon"></div>
+    <div class="employeeName">Name</div>
+    <div class="employeeInsurance">Insured</div>
+    <div class="employeePay">Pay Rate</div>
+    <div class="employeeBenefits">Benefits Cost</div>
+    <div class="employeeEdit">Edit</div>
+  </div>
+  <div class="employeeInfoDataRow" *ngFor="let empl of employeeList">
+    <div class="employeeCard" >
+      <div class="employeeIcon"><span class="material-icons"> person </span></div>
+      <div class="employeeName">{{empl.firstName}} {{empl.lastName}}</div>
+      <div class="employeeInsurance">{{empl.insured}}</div>
+      <div class="employeePay">{{(empl.payRate * 26) | currency}} </div>
+      <div class="employeeBenefits">{{calculateEmployeeBenefitCost(empl) | currency}} </div>
+      <div class="employeeEdit"><span class="material-icons"> edit </span></div>
+    </div>
+    <div class="dependentsCard" *ngFor="let dep of empl.dependents">
+      <div class="employeeIcon"></div>
+      <div class="employeeName">{{dep.firstName}} {{dep.lastName}}</div>
+      <div class="employeeInsurance"><span *ngIf="dep.isSpouse">Spouse</span></div>
+      <div class="employeePay"> </div>
+      <div class="employeeBenefits">{{calculateEmployeeBenefitCost(dep) | currency}} </div>
+      <div class="employeeEdit"></div>
+    </div>
+  </div>
+
 </div>
+

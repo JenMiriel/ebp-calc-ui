@@ -13,16 +13,15 @@ export class EmployeeService {
   constructor(private http: HttpClient) {
   }
 
-  getAllEmployees(): Observable<any[]> {
+  getAllEmployees(): Observable<Employee[]> {
     const url = `${environment.backendUrl}/employee`;
-    return this.http.get<any[]>(url).pipe();
+    return this.http.get<Employee[]>(url).pipe();
 
-    // test data
-    // const mockEmplArr: Employee[] = [
-    //   {id: 1, firstName: 'Lina', lastName: 'Inverse', birthDate: moment(), payRate: 2000, insured: true},
-    //   {id: 2, firstName: 'Gourry', lastName: 'Gabriev', birthDate: moment(), payRate: 2000, insured: false},
-    //   {id: 3, firstName: 'Zelgadiss', lastName: 'Greywords', birthDate: moment(), payRate: 2000, insured: true},
-    // ];
-    // return of(mockEmplArr);
+  }
+
+  getAllEmployeesWithDependents(): Observable<Employee[]> {
+    const url = `${environment.backendUrl}/employee/dependents`;
+    return this.http.get<Employee[]>(url).pipe();
+
   }
 }

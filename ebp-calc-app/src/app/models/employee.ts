@@ -9,6 +9,8 @@ export class Employee {
   payRate: number;
   insured: boolean;
   dependents?: Dependent;
+  benefitCostIndividual: number;
+  totalBenefitCost: number;
 
 
 
