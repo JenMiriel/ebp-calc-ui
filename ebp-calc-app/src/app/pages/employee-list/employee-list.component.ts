@@ -10,7 +10,6 @@ import { AddPersonComponent } from "../../components/add-person/add-person.compo
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Dependent } from "../../models/dependent";
 import { MatTableDataSource } from "@angular/material/table";
-import {log} from "util";
 
 @Component({
   selector: 'app-employee-list',

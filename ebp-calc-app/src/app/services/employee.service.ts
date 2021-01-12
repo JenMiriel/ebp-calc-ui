@@ -4,6 +4,7 @@ import { Observable, of } from "rxjs";
 import { Employee } from "../models/employee";
 import { environment } from "../../environments/environment";
 import * as moment from 'moment';
+import {map} from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -23,5 +24,12 @@ export class EmployeeService {
     const url = `${environment.backendUrl}/employee/dependents`;
     return this.http.get<Employee[]>(url).pipe();
 
+  }
+
+  saveNewEmployeeWithPossibleDependents(employee: Employee): Observable<Employee> {
+    const url = `${environment.backendUrl}/employee`;
+    return this.http.post<Employee>(url, {
+      employee
+    }).pipe(map(e => new Employee(e)));
   }
 }
