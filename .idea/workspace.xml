@@ -2,64 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba41843-967f-416f-a966-f417097d67fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ebp-calc-app/babel.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/test-jest/sum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/test-jest/sum.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/models/dependent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/models/dependent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/src/app/services/employee.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ebp-calc-app/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ebp-calc-app/tsconfig.spec.json" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/ebp-calc-app/node_modules/" />
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/services/employee.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/pages/employee-list/employee-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/components/add-person/add-person.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-              <folding>
-                <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -68,12 +26,12 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/app-setup" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -196,27 +154,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ebp-calc-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="C:\dev\ebp-calc\ebp-calc-ui\ebp-calc-app\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -232,6 +182,9 @@
       <workItem from="1610138600572" duration="18503000" />
       <workItem from="1610259382216" duration="17987000" />
       <workItem from="1610387096963" duration="15850000" />
+      <workItem from="1610472583472" duration="347000" />
+      <workItem from="1610473122714" duration="1456000" />
+      <workItem from="1610474657643" duration="378000" />
     </task>
     <task id="LOCAL-00001" summary="smoothed out api call for employees">
       <created>1610141558238</created>
@@ -291,7 +244,19 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="smoothed out api call for employees" />
@@ -299,10 +264,6 @@
     <MESSAGE value="displaying dependent information" />
     <MESSAGE value="benefits calculations complete" />
     <option name="LAST_COMMIT_MESSAGE" value="benefits calculations complete" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2599" y="291" key="FileChooserDialogImpl" />
-    <state x="2599" y="291" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ebp-calc-app/src/app/app.component.ts">

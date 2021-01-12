@@ -83,24 +83,6 @@
             "browserTarget": "ebp-calc-app:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
-              "src/styles.sass"
-            ],
-            "scripts": []
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -129,5 +111,8 @@
       }
     }
   },
-  "defaultProject": "ebp-calc-app"
+  "defaultProject": "ebp-calc-app",
+  "cli": {
+    "analytics": false
+  }
 }
