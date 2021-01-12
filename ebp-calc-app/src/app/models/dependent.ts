@@ -10,7 +10,7 @@ export class Dependent {
   employeeId: number;
   benefitCostDependent: number;
 
-  constructor(init?: Partial<Employee>) {
+  constructor(init?: Partial<Dependent>) {
     Object.assign(this, init);
   }
 }

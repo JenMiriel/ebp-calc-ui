@@ -1,12 +1,127 @@
 <div class="modal-header">
-  <h4 class="modal-title">Hi there!</h4>
+  <h4 class="modal-title">Add New Employee</h4>
   <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
 <div class="modal-body">
-  <p>Hello, {{name}}!</p>
+
+  <form [formGroup]="employeeInfoForm">
+    <div class="form-row">
+      <div>
+        <mat-form-field appearance="standard">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="Bob" formControlName="employeeFirstName">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="standard">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Smith" formControlName="employeeLastName">
+          <mat-icon matSuffix>leaf</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <mat-form-field appearance="standard">
+          <mat-label>Birthdate</mat-label>
+          <input matInput placeholder="7/4/1987" formControlName="employeeBirthdate">
+          <mat-icon matSuffix>leaf</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="standard">
+          <mat-label>Pay Rate</mat-label>
+          <input matInput placeholder="2000" formControlName="employeePayRate">
+          <mat-icon matSuffix>leaf</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+
+  <p>
+    <mat-checkbox appearance="standard" formControlName="employeeHasInsurance">Employee has company health insurance</mat-checkbox>
+  </p>
+
+    <div class="addDependentsBox" >
+
+      <div>Add Dependents</div>
+        <div class="form-row">
+          <div>
+            <mat-form-field appearance="standard">
+              <mat-label>First Name</mat-label>
+              <input matInput placeholder="Little Susie" formControlName="d1FirstName">
+              <mat-icon matSuffix>leaf</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="standard">
+              <mat-label>Last Name</mat-label>
+              <input matInput placeholder="Smith" formControlName="d1LastName">
+              <mat-icon matSuffix>leaf</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <mat-form-field appearance="standard">
+              <mat-label>Birthdate</mat-label>
+              <input matInput placeholder="7/4/2017" formControlName="d1Birthdate">
+              <mat-icon matSuffix>leaf</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-checkbox appearance="standard" formControlName="d1IsSpouse">Spouse of Employee</mat-checkbox>
+          </div>
+        </div>
+
+      <div class="form-row">
+        <div>
+          <mat-form-field appearance="standard">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="Little Susie" formControlName="d2FirstName">
+            <mat-icon matSuffix>leaf</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="standard">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Smith" formControlName="d2LastName">
+            <mat-icon matSuffix>leaf</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <mat-form-field appearance="standard">
+            <mat-label>Birthdate</mat-label>
+            <input matInput placeholder="7/4/2017" formControlName="d2Birthdate">
+            <mat-icon matSuffix>leaf</mat-icon>
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-checkbox appearance="standard" formControlName="d2IsSpouse">Spouse of Employee</mat-checkbox>
+        </div>
+      </div>
+
+    </div>
+
+    (Demo version is limited to adding two dependents per employee!)
+  </form>
+
+
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  <button type="button" class="btn btn-outline-primary" (click)="activeModal.close('Close click')">Close</button>
+  <button type="button" class="btn btn-outline-primary" (click)="submit()" [disabled]="!employeeInfoForm.valid">Submit</button>
 </div>
